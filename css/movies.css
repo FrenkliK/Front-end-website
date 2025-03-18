@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h3{
+    color: #FFD700;
+    text-align: center;
+}
+body {
+    background-color: #381A1C;
+}
+.navbar {
+    background-color: #7d0e13 !important;
+}
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Change this to your desired color */
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 50px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.movie-poster {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 500px; /* Sets a fixed height for all images */
+    object-fit: fill; /* Ensures the image covers the entire area without distortion */
+    border-radius: 8px;
+}
+main a{
+    background-color: #7d0e13 !important;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.movie-row {
+    margin-bottom: 2rem;
+}
+
+.movie-poster {
+    border-radius: 8px;
+}
+
+.movie-info {
+    background-color:  #381A1C;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #ffffff;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.movie-row + .movie-row {
+    margin-top: 2rem; /* Adjust this value as necessary */
+}
+
+.short-info {
+    display: block;
+    margin: 1rem 0;
+}
+
+.full-info, .trailer-video {
+    display: none;
+    margin: 1rem 0;
+}
+
+.full-info.show, .trailer-video.show {
+    display: block;
+}
+
+
+.book-button {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+i {
+    font-size: 50px; /* Adjust the size as needed */
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .movie-row {
+        flex-direction: column;
+    }
+
+    .movie-poster {
+        margin-bottom: 1rem;
+    }
+}
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #7d0e13; /* Match your theme color */
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: opacity 0.3s ease;
+}
+
+.scroll-top:hover {
+    background-color: #5a0a0d; /* Slightly darker on hover */
+}

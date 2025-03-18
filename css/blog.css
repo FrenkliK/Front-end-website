@@ -1,0 +1,79 @@
+body{
+    color: #fff;
+    background-color: #381A1C;
+}
+h1{
+    text-align: center;
+}
+.blog-post img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    max-width: 300px; /* Adjust to your desired width */
+    height: 200px; /* Adjust to your desired height */
+    object-fit: fill; /* Ensures the image covers the entire area without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin: 10px auto; /* Centers the image and adds spacing around it */
+    display: block; /* Makes the image a block element to apply auto margins */
+}
+.blog-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.text-right, .text-left {
+    flex: 1;
+    max-width: 45%; /* Adjust the width of the text container */
+}
+
+.image-right, .image-left {
+    max-width: 45%; /* Adjust the width of the image */
+    height: auto;
+}
+
+.text-right {
+    margin-right: 20px;
+}
+
+.text-left {
+    margin-left: 20px;
+}
+
+/* Additional margin between posts */
+.blog-post + .blog-post {
+    margin-top: 40px; /* Adds space between posts */
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .image-right, .image-left, .text-right, .text-left {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .blog-post + .blog-post {
+        margin-top: 20px; /* Reduce space on smaller screens */
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #7d0e13; /* Match your theme color */
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #5a0a0d; /* Slightly darker on hover */
+}

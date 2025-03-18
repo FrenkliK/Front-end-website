@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #381A1C;
+    color: #fff;
+}
+.pt-5, .py-5 {
+    padding-top: 2rem !important; 
+    padding-bottom: 2rem; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #7d0e13 !important;
+}
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Change this to your desired color */
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 50px;
+}
+
+/* About Section Styles */
+.about-section h2 {
+    font-family: 'Affair', serif;
+    color: #FFD700;
+}
+
+.about-section p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+i {
+    font-size: 50px; /* Adjust the size as needed */
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}

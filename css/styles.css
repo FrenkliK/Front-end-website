@@ -1,0 +1,591 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7d0e13;
+}
+.container {
+    text-align: center;
+    padding: 15px;
+     /* Center the content within the container */
+}
+
+.text-link {
+    display: inline-block; /* Make the link only as wide as its content */
+    padding: 20px; /* Add padding around the text */
+    text-decoration: none; 
+    border-top: 2px solid  #fff;
+    border-bottom: 2px solid #fff;
+    display: inline-block; 
+}
+
+.text-heading {
+    font-size: 6vh; /* Set the desired font size */
+    margin: 0;
+    letter-spacing: 2.5vh;
+    /* Add padding for spacing between text and borders */
+}
+
+
+h2 {
+    color: #f1f1f1;
+}
+
+.text-gold {
+    color: #FFD700;
+}
+.bg-dark {
+    background-color: #7d0e13 !important;
+}
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' d='M5 15h20M5 9h20M5 21h20'/%3E%3C/svg%3E");
+}
+@media (max-width: 992px) {
+    .navbar-nav.mx-auto {
+        position: static;
+        transform: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-collapse {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav.mx-auto {
+        justify-content: flex-start;
+    }
+
+    .navbar-nav:last-child {
+        margin-left: 0;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+}
+/* Mobile Dropdown Styles */
+@media (max-width: 991px) {
+    .navbar-nav.ml-auto {
+        display: none;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+/* Navbar adjustments for alignment and spacing */
+/* Ensure the navbar container is full-width */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.hero .left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.hero .left img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero .text-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.hero .text-overlay h2 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vh;
+}
+
+.hero .text-overlay p {
+    margin: 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh;
+}
+
+.hero .button-container {
+    margin-top: 20px;
+}
+
+.hero .text-overlay button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero .text-overlay button:hover {
+    background-color: #FFC107;
+}
+
+.hero .right {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .right iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Section Styles */
+.section {
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7d0e13;
+    height: auto;
+}
+
+.section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.section-current {
+    height: auto;
+    width: 100%; /* Ensures the section takes up the full width of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents any overflow outside the section */
+}
+.carousel {
+    width: 55%;
+    height: 90vh; /* This allows the height to adjust based on the content */
+    overflow: hidden;
+}
+.carousel-indicators {
+    bottom: 10px; /* Adjust as needed */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 25%; /* Adjust the size of the controls if necessary */
+}
+
+.carousel-inner {
+    height: auto; /* Adjusts the image height to fill the section */
+    width: 100%;
+}
+
+.carousel-item {
+    transition: 0.5s; /* Disables any transformation during slide transitions */
+}
+
+.carousel-item img {
+    height: 90vh; /* Adjusts the image height to fill the section */
+    width: 100%; /* Adjusts the image width to fill the section */
+    object-fit: fill; /* Ensures the image covers the entire carousel item */
+}
+
+/* Future Section */
+#future {
+    padding: 50px 20px; /* Add padding for better spacing */
+    color: white; /* Ensure the text is visible against the dark background */
+    font-family: 'Roboto', sans-serif; /* Keep consistent typography */
+}
+
+#future h2 {
+    color: #fff; /* Optional: Make headings stand out with a gold color */
+}
+
+/* Future Movies Container */
+.future-movies-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* Space between gallery and description */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.future-movies-section .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 2px;
+}
+
+/* Movie Details */
+.movie-details {
+    display: none;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+    height: 100%; /* Make it fill the height of the column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+}
+
+.movie-details.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Gallery Styles */
+.gallery-container {
+    width: 30%;
+    height: 80%;
+    flex: 1;
+    max-width: 50%;
+}
+
+.gallery {
+    --s: 40vh; /* the size */
+    display: grid;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    width: var(--s);
+    height: var(--s);
+    align-content: center;
+    justify-items: start;
+}
+
+.gallery > img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1;
+    object-fit: fill;
+    border-radius: 50%;
+    transform: translate(var(--_x, 0), var(--_y, 0));
+    cursor: pointer;
+    font-size: 0;
+    z-index: 0;
+    transition: .0001s, z-index 0s .001s;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    font-size: var(--s);
+    z-index: 1;
+    transition: transform .2s, font-size .3s .2s, z-index 0s;
+}
+
+.gallery:hover img {
+    transform: translate(0, 0);
+}
+
+.gallery > img:nth-child(1) {
+    clip-path: polygon(50% 50%, .5em 1.2em, 0 1em, 0 0, 100% 0, 100% 1em, calc(100% - .5em) 1.2em);
+    --_y: calc(-1 * var(--g));
+}
+
+.gallery > img:nth-child(2) {
+    clip-path: polygon(50% 50%, calc(100% - 1.2em) 0.5em, calc(100% - 1em) 0, 100% 0, 100% 100%, calc(100% - 1em) 100%, calc(100% - 1.2em) calc(100% - .5em));
+    --_x: var(--g);
+}
+
+.gallery > img:nth-child(3) {
+    clip-path: polygon(50% 50%, calc(100% - .5em) calc(100% - 1.2em), 100% calc(100% - 1.2em), 100% 100%, 0 100%, 0 calc(100% - 1em), .5em calc(100% - 1.2em));
+    --_y: var(--g);
+}
+
+.gallery > img:nth-child(4) {
+    clip-path: polygon(50% 50%, 1.2em .5em, 1em 0, 0 0, 0 100%, 1em 100%, 1.2em calc(100% - .5em));
+    --_x: calc(-1 * var(--g));
+}
+
+/* Special Events Styles */
+.special-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3vh;
+    padding: 20px;
+}
+
+.event-card {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    background-size: cover;  /* Ensures the image covers the entire card */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents repeating if the image is smaller */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.event-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Add a background to make text more readable */
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; /* Ensure content fills the width */
+    height: 50%; /* Ensure content fills the height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Affair', serif;
+    color: #fff;
+}
+
+.event-card p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* VIP Section */
+#vip {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#vip p {
+    font-family: 'Affair', serif;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#vip h2 {
+    color: #FFD700;
+    font-family: 'Affair', serif;
+}
+
+.vip-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.vip-text {
+    margin-bottom: 20px;
+}
+
+
+.vip-card img {
+    width: 100%;
+    max-width: 30%; /* Limit the max width of the VIP card on larger screens */
+    height: auto;
+    max-height: 15%;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vip-card:hover img {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Catering Menu */
+.catering-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Make sure all items stretch to the same height */
+}
+
+.catering-item {
+    flex: 1 1 22%; /* Adjust the flex-basis to control how many items per row */
+    margin: 1%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ensure content is vertically aligned */
+    justify-content: space-between;
+}
+
+.catering-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: fill; /* Ensure the image covers the area without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.catering-item h3 {
+    margin: 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.catering-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure consistent height */
+.catering-item {
+    height: 100%; /* Make all items equal height */
+    display: flex;
+    flex-direction: column;
+}
+
+.catering-item > img, 
+.catering-item > h3, 
+.catering-item > .dropdown-content {
+    flex-shrink: 0; /* Prevent them from shrinking */
+}
+
+.catering-item > .dropdown-content {
+    flex-grow: 1; /* Ensure dropdown-content takes up remaining space */
+}
+
+/* Adjustments for Hero Section */
+.hero .left img, .hero .right video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: none; /* Remove shadow */
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh; /* Full height */
+    margin-top: 0; /* Ensure no margin at the top */
+}
+
+/* Icon Styles */
+i {
+    font-size: 50px; /* Adjust the size as needed */
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+/* Future section adjustments */
+.future-movies-section .gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.future-movies-section .movie-details {
+    text-align: center;
+    padding: 10px;
+}
+
+.future-movies-section .row {
+    flex-direction: column;
+}
+
+.future-movies-section .col-md-6, .future-movies-section .col-md-5 {
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+    .future-movies-section {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .future-movies-section .gallery img {
+        width: 80%; /* Adjust image size */
+        margin: 0; /* Center the images */
+    }
+}
+@media only screen and (max-width: 767px) {
+    section {
+        min-height: 100px; /* Smaller height for mobile */
+    }
+}

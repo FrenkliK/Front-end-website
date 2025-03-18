@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANI NË KINEMA</title>
+    <!-- Bootstrap CSS -->
+     
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="icon" href="image/icons8-movie-theater-32.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/cinema.png" alt="Onstage Cinema Logo" class="d-inline-block align-top" width="200" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div id="deadpool-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/deadpool.jpg" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Deadpool & Wolverine</h3>
+                <p><strong>Actors:</strong>Ryan Reynolds, Hugh Jackman, Emma Corrin</p>
+                <p><strong>Genres:</strong> Action, Horror, Satire, Sci-Fi, Superhero</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Deadpool i ofrohet një vend në Universin Kinematik Marvel nga Time Variance Authority, por në vend të kësaj rekruton një variant të Wolverine për të shpëtuar universin e tij nga zhdukja...</p>
+                <p class="full-info">Ekzistenca paqësore e Deadpool-it rrëzohet kur Autoriteti i Variancës së Kohës e rekruton atë për të ndihmuar në mbrojtjen e multiversit. Ai së shpejti bashkohet me shokun e tij të mundshëm, Wolverine, për të përfunduar misionin dhe për të shpëtuar botën e tij nga një kërcënim ekzistencial.</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/73_1biulkYk" title="Deadpool &amp; Wolverine | Official Trailer | In Theaters July 26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Repeat for other movies -->
+        <div id="badboys-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/download-1.avif" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Bad Boys: Ride or Die</h3>
+                <p><strong>Actors:</strong> Will Smith, Martin Lawrence, Vanessa Hudgens</p>
+                <p><strong>Genres:</strong> Comedy, Action, Adventure, Crime, Thriller</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Kur kapiteni i tyre i ndjerë i policisë lidhet me kartelet e drogës, policët e urtë të Miami, Mike Lowrey dhe Marcus Burnett, nisin një mision të rrezikshëm për të pastruar emrin e tij...</p>
+                <p class="full-info">Katër vjet pas vdekjes së Isabel Aretas, detektivi i MPD Mike Lowrey martohet me terapistin e tij fizik, Christine. Gjatë pritjes, partneri i tij, detektivi Marcus Burnett, pëson një atak të lehtë në zemër dhe shkon në koma, ku ai përjeton një vizion të kapitenit të ndjerë Conrad Howard duke i thënë se nuk është koha e tij.</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hRFY_Fesa9Q" title="BAD BOYS: RIDE OR DIE – Official Trailer (HD)" frameborder="0" allowfullscreen></iframe>
+                </div>
+                </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+        <div id="alien-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/alien.webp" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Alien: Romulus</h3>
+                <p><strong>Actors:</strong>Cailee Spaeny, David Jonsson, Archie Renaux</p>
+                <p><strong>Genres:</strong> Horror, Sci-Fi, Thriller</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Ndërsa fshijnë skajet e thella të një stacioni hapësinor të braktisur, një grup kolonësh të rinj të hapësirës ballafaqohen me formën më të tmerrshme të jetës në univers...</p>
+                <p class="full-info">Kolonizuesit e hapësirës vijnë ballë për ballë me formën më të tmerrshme të jetës në univers, ndërsa fshijnë skajet e thella të një stacioni hapësinor të braktisur.</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/OzY2r2JXsDM" title="Alien: Romulus | Official Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+       
+        </div>
+        <div id="arc-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/arc.jpg" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Arcadian</h3>
+                <p><strong>Actors:</strong> Nicolas Cage, Jaeden Martell, Maxwell Jenkins</p>
+                <p><strong>Genres:</strong> Action, Horror, Drama, Sci-Fi, Thriller</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Një baba dhe djemtë e tij binjakë adoleshentë luftojnë për të mbijetuar në një fermë të largët në fund të botës...</p>
+                <p class="full-info">Në të ardhmen e afërt në një Tokë të shkatërruar, Paul dhe djemtë e tij binjakë përballen me terror natën kur zgjohen krijesa të egra...</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/RGLtN_2UrEw" title="Arcadian Trailer #1 (2024)" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+        <div id="des-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/des1.jpg" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Despicable Me 4</h3>
+                <p><strong>Actors:</strong>Steve Carell, Kristen Wiig, Pierre Coffin</p>
+                <p><strong>Genres:</strong> Adventure, Comedy, Sci-Fi, Animation</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Gru, Lucy, Margo, Edith dhe Agnes mirëpresin një anëtar të ri në familje, Gru Jr., i cili synon të mundojë babanë e tij. Gru përballet me një armik të ri në Maxime Le Mal dhe të dashurën e tij Valentina, dhe familja detyrohet të shkojë në arrati...</p>
+                <p class="full-info">Gru mirëpret një anëtar të ri në familje, Gru Jr., i cili ka për qëllim të mundojë babanë e tij. Megjithatë, ekzistenca e tyre paqësore shpejt rrëzohet kur organizatori kriminal Maxime Le Mal arratiset nga burgu dhe zotohet të hakmerret kundër Gru.</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qQlr9-rF32A" title="Despicable Me 4 | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+        <div id="inside-row" class="movie-row">
+        <div class="row movie-row">
+            <div class="col-md-4 col-lg-3">
+                <img src="image/inside.webp" alt="Movie Poster" class="movie-poster img-fluid">
+            </div>
+            <div class="col-md-8 col-lg-9 movie-info">
+                <h3>Inside Out 2</h3>
+                <p><strong>Actors:</strong>Amy Poehler, Maya Hawke, Kensington Tallman</p>
+                <p><strong>Genres:</strong> Comedy, Family, Drama, Adventure, Animation</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p class="short-info">Një vazhdim që paraqet Riley që hyn në pubertet dhe përjeton emocione krejt të reja, më komplekse si rezultat. Ndërsa Riley përpiqet të përshtatet me vitet e adoleshencës, emocionet e saj të vjetra përpiqen të përshtaten me mundësinë e zëvendësimit...</p>
+                <p class="full-info">Gëzimi, trishtimi, zemërimi, frika dhe neveria kanë kryer një operacion të suksesshëm nga të gjitha llogaritë. Megjithatë, kur shfaqet ankthi, ata nuk janë të sigurt se si të ndihen.</p>
+                <div class="trailer">
+                    <div class="trailer-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/LEjhY15eCx0" title="Inside Out 2 | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-danger mt-3 book-button">Book Now</a>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Social Media</h2>
+        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <br>
+        <a href="Kushtet.html">Kushtet dhe Termat</a>
+        <p>&copy; 2024 Onstage Cinema. All Rights Reserved. Website developed by Frenkli Koleci.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/movies.js"></script>
+    <div id="scrollTopBtn" class="scroll-top">
+        &#8679; <!-- Unicode arrow up -->
+    </div>
+    
+</body>
+</html>

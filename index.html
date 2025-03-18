@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scripts.js" defer></script>
+        <link rel="icon" href="image/icons8-movie-theater-32.png" type="image/png">
+        <title>Onstage Cinema</title>
+    </head>
+<body>
+    <header class="fixed-top bg-dark text-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="image/cinema.png" class="d-inline-block align-top" width="200" height="50" alt="Onstage Cinema Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#kot" class="nav-link text-white">TANI NË KINEMA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#future" class="nav-link text-white">VIJNË SË SHPEJTI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#special" class="nav-link text-white">EVENTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vip" class="nav-link text-gold" style="font-family: 'Affair', serif;">VIP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#catering" class="nav-link text-white">CATERING</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-white">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white">CONTACT</a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="left">
+            <img src="image/deadpool.jpg" alt="Deadpool Poster">
+            <div class="text-overlay">
+                <h2>DEADPOOL & WOLVERINE</h2>
+                <p>Deadpool i ofrohet një vend në Universin Kinematik Marvel nga Time Variance Authority, por në vend të kësaj rekruton një variant të Wolverine për të shpëtuar universin e tij nga zhdukja.</p>
+                <div class="button-container">
+                    <button class="book-btn" onclick="window.location.href='contact.html'">Book</button>
+                </div>                
+            </div>
+        </div>
+        <div class="right">
+            <iframe src="https://www.youtube.com/embed/73_1biulkYk" title="Deadpool &amp; Wolverine | Official Trailer | In Theaters July 26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div id="kot" class="container">
+        <a href="movies.html" class="text-link">
+            <h2 class="text-heading">TANI NË KINEMA</h2>
+        </a>
+    </div>
+    <section id="current" class="section-current">
+        <div id="carouselExampleIndicators" class="carousel slide"data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <a href="movies.html#des-row">
+                        <img src="image/des1.jpg" class="d-block w-100" alt="DESPICABLE ME 4">
+                    </a>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <a href="movies.html#badboys-row">
+                        <img src="image/download-1.avif" class="d-block w-100" alt="Bad Boys">
+                    </a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <a href="movies.html#arc-row">
+                        <img src="image/arc.jpg" class="d-block w-100" alt="Arcadian">
+                    </a>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <a href="movies.html#alien-row">
+                        <img src="image/alien.webp" class="d-block w-100" alt="Alien">
+                    </a>
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <a href="movies.html#inside-row">
+                        <img src="image/inside.webp" class="d-block w-100" alt="INSIDE OUT 2">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="future" class="section future-movies-section">
+        <br>
+        <h2>VIJNË SË SHPEJTI</h2>
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="gallery">
+                    <img src="image/Gladiator_II_(2024)_poster.jpg" alt="Future Movie 1" onmouseover="showMovieDetails(1)" class="active">
+                    <img src="image/the-lord-of-the-rings-the-war-of-the-rohirrim.jpg" alt="Future Movie 2" onmouseover="showMovieDetails(2)" class="inactive">
+                    <img src="image/zootopia.jpg" alt="Future Movie 3" onmouseover="showMovieDetails(3)" class="inactive">
+                    <img src="image/venom.jpg" alt="Future Movie 4" onmouseover="showMovieDetails(4)" class="inactive">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="movie-details" id="movie-details">
+                    <h3 id="movie-title"></h3>
+                    <p id="movie-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <div id="special" class="special-events">
+        <div class="event-card" style="background-image: url('image/family-day-celebration-flat-word-concept-banner-vector-25118174.jpg');">
+            <div class="event-content">
+                <h3>Family Day</h3>
+                <p>Shijoni një ditë të veçantë familjare me bileta grupore me zbritje për familjet me katër ose më shumë persona.</p>
+                <p class="note">(E disponueshme vetëm të dielave)</p>
+            </div>
+        </div>
+        <div class="event-card" style="background-image: url('image/Creative-Cosplay.jpeg');">
+            <div class="event-content">
+                <h3>Cosplay</h3>
+                <p>Vishuni si nje personazh ne filmin qe do shikoni dhe perfitoni 1 dhurat surpriz! </p>
+                <p class="note">(Duhet të bëni një foto për të marrë dhuratën.)</p>
+
+            </div>
+        </div>
+        <div class="event-card" style="background-image: url('image/student.png');">
+            <div class="event-content">
+                <h3>Zbritje për Studentët</h3>
+                <p>Të gjithë studentët me kartë studentore të vlefshme kanë 10% zbritje në të gjitha blerjet e biletave në këtë kinema.</p>
+                <p class="note">(Mos harroni të keni me vete kartën e studentit gjatë blerjes)</p>
+            </div>
+        </div>
+    </div>
+    
+    <section id="vip">
+        <br>
+        <div class="vip-content">
+            <div class="vip-text text-center">
+                <h2>Karta VIP</h2>
+    <p>Përjetoni komoditetin dhe luksin maksimal me kartat tona VIP, duke ofruar oferta dhe përfitime ekskluzive.</p>
+    <p>Vende Prioritare | Zbritje Ekskluzive | Pije dhe Ushqime Komplimentare | Oferta Ekskluzive</p>
+ 
+                <a href="contact.html?subject=VIP%20Membership" class="btn btn-primary btn-lg" style="background-color: #141f3f; border-color: #141f3f; color: #FFD700;">Join Now</a>
+            </div>
+            <div id="vip-card" class="vip-card">
+                <img src="image/membership-card.jpg" alt="VIP Card">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="catering" class="section">
+        <h2>Catering</h2>
+        <div class="catering-menu">
+            <div class="catering-item" onclick="toggleDropdown('popcorn')">
+                <img src="image/popcorn.jpg" alt="Popcorn">
+                <h3>Kokoshka</h3>
+                <div id="popcorn" class="dropdown-content">
+                    <p>Small - 300L</p>
+                    <p>Medium - 400L</p>
+                    <p>Large - 500L</p>
+                </div>
+            </div>
+            <div class="catering-item" onclick="toggleDropdown('drinks')">
+                <img src="image/soda.jpg" alt="Drinks">
+                <h3>Pije</h3>
+                <div id="drinks" class="dropdown-content">
+                    <p>Pepsi - 250L</p>
+                    <p>Uje - 200L</p>
+                    <p>Leng - 300L</p>
+                </div>
+            </div>
+            <div class="catering-item" onclick="toggleDropdown('nachos')">
+                <img src="image/nachos.jpg" alt="Nachos">
+                <h3>Nachos</h3>
+                <div id="nachos" class="dropdown-content">
+                    <p>Small - 400L</p>
+                    <p>Regular - 600L</p>
+                    <p>Large - 800L</p>
+                    
+                </div>
+            </div>
+            <div class="catering-item" onclick="toggleDropdown('hotdogs')">
+                <img src="image/snacks.jpg" alt="Hotdogs">
+                <h3>Snacks</h3>
+                <div id="hotdogs" class="dropdown-content">
+                    <p>Lays - 100L</p>
+                    <p>Bake rolls - 100L</p>
+                    <p>Milka - 200L</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Social Media</h2>
+        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+       <br>
+        <a href="Kushtet.html">Kushtet dhe Termat</a>
+        <p>&copy; 2024 Onstage Cinema. All Rights Reserved. Website developed by Frenkli Koleci.</p>
+    </footer>
+</body>
+</html>
