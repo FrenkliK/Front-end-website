@@ -18,7 +18,7 @@
 <body>
     <header class="fixed-top bg-dark text-white shadow-sm">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="image/cinema.png" class="d-inline-block align-top" width="200" height="50" alt="Onstage Cinema Logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="image/cinema.png" class="d-inline-block align-top" width="200" height="50" alt="Onstage Cinema Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +42,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">HOME</a>
+                        <a href="index.html" class="nav-link text-white" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="blog.html">BLOG</a>
@@ -68,7 +68,7 @@
                 <h2>DEADPOOL & WOLVERINE</h2>
                 <p>Deadpool i ofrohet një vend në Universin Kinematik Marvel nga Time Variance Authority, por në vend të kësaj rekruton një variant të Wolverine për të shpëtuar universin e tij nga zhdukja.</p>
                 <div class="button-container">
-                    <button class="book-btn" onclick="window.location.href='contact.html'">Book</button>
+                    <button class="book-btn" onclick="window.location.href='contact.html'">Book Now</button>
                 </div>                
             </div>
         </div>
@@ -138,10 +138,10 @@
         <div class="row">
             <div class="col-md-6 ">
                 <div class="gallery">
-                    <img src="image/Gladiator_II_(2024)_poster.jpg" alt="Future Movie 1" onmouseover="showMovieDetails(1)" class="active">
-                    <img src="image/the-lord-of-the-rings-the-war-of-the-rohirrim.jpg" alt="Future Movie 2" onmouseover="showMovieDetails(2)" class="inactive">
-                    <img src="image/zootopia.jpg" alt="Future Movie 3" onmouseover="showMovieDetails(3)" class="inactive">
-                    <img src="image/venom.jpg" alt="Future Movie 4" onmouseover="showMovieDetails(4)" class="inactive">
+                    <img src="image/Gladiator_II_(2024)_poster.jpg" alt="Gladiator II poster" onmouseover="showMovieDetails(1)" class="active" loading="lazy">
+                    <img src="image/the-lord-of-the-rings-the-war-of-the-rohirrim.jpg" alt="The War of the Rohirrim poster" onmouseover="showMovieDetails(2)" class="inactive" loading="lazy">
+                    <img src="image/zootopia.jpg" alt="Zootopia 2 poster" onmouseover="showMovieDetails(3)" class="inactive" loading="lazy">
+                    <img src="image/venom.jpg" alt="Venom: The Last Dance poster" onmouseover="showMovieDetails(4)" class="inactive" loading="lazy">
                 </div>
             </div>
             <div class="col-md-5">
@@ -163,7 +163,7 @@
         <div class="event-card" style="background-image: url('image/Creative-Cosplay.jpeg');">
             <div class="event-content">
                 <h3>Cosplay</h3>
-                <p>Vishuni si nje personazh ne filmin qe do shikoni dhe perfitoni 1 dhurat surpriz! </p>
+                <p>Vishuni si një personazh në filmin që do shikoni dhe përfitoni 1 dhuratë surprizë!</p>
                 <p class="note">(Duhet të bëni një foto për të marrë dhuratën.)</p>
 
             </div>
@@ -198,7 +198,7 @@
         <h2>Catering</h2>
         <div class="catering-menu">
             <div class="catering-item" onclick="toggleDropdown('popcorn')">
-                <img src="image/popcorn.jpg" alt="Popcorn">
+                <img src="image/popcorn.jpg" alt="Popcorn" loading="lazy">
                 <h3>Kokoshka</h3>
                 <div id="popcorn" class="dropdown-content">
                     <p>Small - 300L</p>
@@ -207,16 +207,16 @@
                 </div>
             </div>
             <div class="catering-item" onclick="toggleDropdown('drinks')">
-                <img src="image/soda.jpg" alt="Drinks">
+                <img src="image/soda.jpg" alt="Drinks" loading="lazy">
                 <h3>Pije</h3>
                 <div id="drinks" class="dropdown-content">
                     <p>Pepsi - 250L</p>
-                    <p>Uje - 200L</p>
-                    <p>Leng - 300L</p>
+                    <p>Ujë - 200L</p>
+                    <p>Lëng - 300L</p>
                 </div>
             </div>
             <div class="catering-item" onclick="toggleDropdown('nachos')">
-                <img src="image/nachos.jpg" alt="Nachos">
+                <img src="image/nachos.jpg" alt="Nachos" loading="lazy">
                 <h3>Nachos</h3>
                 <div id="nachos" class="dropdown-content">
                     <p>Small - 400L</p>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="catering-item" onclick="toggleDropdown('hotdogs')">
-                <img src="image/snacks.jpg" alt="Hotdogs">
+                <img src="image/snacks.jpg" alt="Snacks" loading="lazy">
                 <h3>Snacks</h3>
                 <div id="hotdogs" class="dropdown-content">
                     <p>Lays - 100L</p>
@@ -239,10 +239,10 @@
     
     <footer>
         <h2>Social Media</h2>
-        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/yourprofile" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Onstage Cinema on Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Onstage Cinema on X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Onstage Cinema on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Onstage Cinema on TikTok"><i class="fa-brands fa-tiktok"></i></a>
        <br>
         <a href="Kushtet.html">Kushtet dhe Termat</a>
         <p>&copy; 2024 Onstage Cinema. All Rights Reserved. Website developed by Frenkli Koleci.</p>
