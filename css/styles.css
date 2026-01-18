@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #7d0e13;
+    line-height: 1.6;
 }
 .container {
     text-align: center;
@@ -17,7 +18,6 @@ body {
     text-decoration: none; 
     border-top: 2px solid  #fff;
     border-bottom: 2px solid #fff;
-    display: inline-block; 
 }
 
 .text-heading {
@@ -43,6 +43,13 @@ h2 {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' d='M5 15h20M5 9h20M5 21h20'/%3E%3C/svg%3E");
+}
+header {
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
 }
 @media (max-width: 992px) {
     .navbar-nav.mx-auto {
@@ -218,7 +225,7 @@ h2 {
 .carousel-item img {
     height: 90vh; /* Adjusts the image height to fill the section */
     width: 100%; /* Adjusts the image width to fill the section */
-    object-fit: fill; /* Ensures the image covers the entire carousel item */
+    object-fit: cover; /* Ensures the image covers the entire carousel item */
 }
 
 /* Future Section */
@@ -361,6 +368,7 @@ h2 {
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
@@ -484,12 +492,13 @@ footer a:hover {
     display: flex;
     flex-direction: column; /* Ensure content is vertically aligned */
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .catering-item img {
     width: 100%;
     height: 200px; /* Set a fixed height for all images */
-    object-fit: fill; /* Ensure the image covers the area without distortion */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -505,6 +514,7 @@ footer a:hover {
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 0 0 10px 10px;
+    transition: opacity 0.2s ease;
 }
 
 .catering-item:hover {
@@ -533,7 +543,7 @@ footer a:hover {
 .hero .left img, .hero .right video {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     box-shadow: none; /* Remove shadow */
     margin: 0;
 }
